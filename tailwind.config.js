@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      body: ["Andada Pro", "serif"],
+      sans: ["ui-sans-serif", "system-ui"],
+    },
+  },
+  variants: {
+    extends: {},
+    scrollbars: ["rounded"]
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
