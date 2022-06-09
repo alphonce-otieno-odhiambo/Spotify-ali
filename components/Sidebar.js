@@ -1,5 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import {
+    HomeIcon,
+    ClockIcon,
+    DotsHorizontalIcon,
+    ChartBarIcon
+} from "@heroicons/react/solid";
+import {FaMicrophoneAlt} from "react-icons/fa";
+import {RiCompassFill } from "react-icons/ri"
 
 const Sidebar = () => {
   return (
@@ -9,7 +17,14 @@ const Sidebar = () => {
       width={50} height={50}
       objectFit='contain'
       />
-      <div></div>
+      <div className='space-y-8'>
+          <HomeIcon className='sidebarIcon text-white opacity-[0.85]  '/>
+          <RiCompassFill className='sidebarIcon text-xl'/>
+          <FaMicrophoneAlt className='sidebarIcon ml-3'/>
+          <ChartBarIcon className='sidebarIcon '/>
+          <ClockIcon className='sidebarIcon '/>
+          <DotsHorizontalIcon className='sidebarIcon '/>
+      </div>
     </section>
   )
 }
